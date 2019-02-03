@@ -11,7 +11,6 @@ package pharmaciticalstoremanagement.UI;
  */
 import BusinessLogic.UserActivities;
 import BusinessLogic.inventory;
-import BusinessLogic.medicine;
 import java.awt.CardLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

@@ -6,8 +6,6 @@
 package pharmaciticalstoremanagement.UI;
 
 import BusinessLogic.category;
-import BusinessLogic.group;
-import BusinessLogic.medicine;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;

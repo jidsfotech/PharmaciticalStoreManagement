@@ -1,7 +1,6 @@
 package pharmaciticalstoremanagement.UI;
 
 import BusinessLogic.users;
-import pharmaciticalstoremanagement.UI.PharmacyStoreMainFrame;
 
 /*
  * To change this license header, choose License Headers in Project Properties.

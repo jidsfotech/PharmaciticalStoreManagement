@@ -5,7 +5,6 @@
  */
 package pharmaciticalstoremanagement.UI;
 
-import BusinessLogic.medicine;
 import BusinessLogic.sales;
 import BusinessLogic.transactions;
 import java.awt.Color;

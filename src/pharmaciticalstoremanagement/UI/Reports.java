@@ -9,8 +9,6 @@ import BusinessLogic.UserActivities;
 import BusinessLogic.inventory;
 import BusinessLogic.sales;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
 import javax.swing.DefaultComboBoxModel;
 
 /**
