@@ -258,7 +258,7 @@ public class SellMedicine extends javax.swing.JPanel {
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+                java.lang.String.class, java.lang.Integer.class, java.lang.Integer.class, java.lang.Integer.class
             };
 
             public Class getColumnClass(int columnIndex) {
@@ -567,19 +567,21 @@ public class SellMedicine extends javax.swing.JPanel {
     private void medicineTablejTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_medicineTablejTableMouseClicked
         // TODO add your handling code here:
         rowNum = medicineTablejTable.getSelectedRow();
-        Object med_name = medicineTablejTable.getValueAt(rowNum, 0);
-        Object med_quantity = medicineTablejTable.getValueAt(rowNum, 1);
-        Object med_price = medicineTablejTable.getValueAt(rowNum, 2);
-        Object med_interestrate = medicineTablejTable.getValueAt(rowNum, 3);
+        String med_name = (String) medicineTablejTable.getValueAt(rowNum, 0);
+        String med_quantity =  String.valueOf(medicineTablejTable.getValueAt(rowNum, 1));
+        String med_price = String.valueOf(medicineTablejTable.getValueAt(rowNum, 2));
+        String med_interestrate = String.valueOf(medicineTablejTable.getValueAt(rowNum, 3));
 
         medNamejLabel.setText((String) med_name);
-        quantityInStorejLabel.setText((String) med_quantity);
-        pricejLabel.setText((String) med_price);
-        salesPricejTextField.setText((String) med_price);
-        interestratejTextField.setText((String) med_interestrate);
+        quantityInStorejLabel.setText(med_quantity);
+        pricejLabel.setText(med_price);
+        salesPricejTextField.setText (med_price);
+        interestratejTextField.setText(med_interestrate);
 
         salesPricejTextField.setEditable(false);
         interestratejTextField.setEditable(false);
+        
+        
     }//GEN-LAST:event_medicineTablejTableMouseClicked
 
     private void salesPricejTextFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_salesPricejTextFieldFocusLost
@@ -629,6 +631,8 @@ public class SellMedicine extends javax.swing.JPanel {
             medicineTablejTable.setValueAt(updateQty, index, 1);
 
             ((DefaultTableModel) cartjTable.getModel()).removeRow(row);
+            ((DefaultTableModel)checkOutItemCart_Table.getModel()).removeRow(row);
+
 
         }
     }//GEN-LAST:event_deleteFromCatjButtonActionPerformed
