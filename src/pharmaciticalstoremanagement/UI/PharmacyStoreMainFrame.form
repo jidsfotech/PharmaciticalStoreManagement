@@ -180,8 +180,8 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Component id="StorePagesSwitcherJPanel" alignment="0" max="32767" attributes="0"/>
           <Group type="102" attributes="0">
-              <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
-              <Component id="expiredProductAlertJLabel" min="-2" pref="228" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+              <Component id="expiredProductAlertJLabel" min="-2" pref="283" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
               <Component id="jLabel1" min="-2" pref="354" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
@@ -270,7 +270,7 @@
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
-                  <EmptySpace pref="12" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="displayMedicinejButton" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="SalesjButton" alignment="3" min="-2" max="-2" attributes="0"/>
